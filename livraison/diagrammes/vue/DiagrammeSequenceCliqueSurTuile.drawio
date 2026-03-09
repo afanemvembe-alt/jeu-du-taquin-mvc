@@ -1,0 +1,168 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.1">
+  <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
+    <mxGraphModel dx="806" dy="481" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value=":Joueur" vertex="1">
+          <mxGeometry height="300" width="100" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-2" parent="aM9ryv3xv72pqoxQDRHE-1" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="220" width="10" x="45" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-5" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value=":Vue(Tuile boutton)" vertex="1">
+          <mxGeometry height="300" width="100" x="240" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-6" parent="aM9ryv3xv72pqoxQDRHE-5" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="220" width="10" x="45" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-9" edge="1" parent="aM9ryv3xv72pqoxQDRHE-5" source="aM9ryv3xv72pqoxQDRHE-6" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" target="aM9ryv3xv72pqoxQDRHE-5" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint y="120" />
+              <mxPoint x="-50" y="120" />
+            </Array>
+            <mxPoint x="-65" y="120" as="sourcePoint" />
+            <mxPoint x="110" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-7" parent="aM9ryv3xv72pqoxQDRHE-5" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="90" width="10" x="50" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-8" edge="1" parent="aM9ryv3xv72pqoxQDRHE-5" source="WFtRAj5fptTf-JqGrwJd-7" style="endArrow=classic;html=1;rounded=0;" target="WFtRAj5fptTf-JqGrwJd-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="130" y="140" as="sourcePoint" />
+            <mxPoint x="180" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-7" edge="1" parent="1" source="aM9ryv3xv72pqoxQDRHE-2" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;fillColor=#1ba1e2;strokeColor=#006EAF;" target="aM9ryv3xv72pqoxQDRHE-6" value="clic sur une tuile">
+          <mxGeometry relative="1" x="0.1053" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="180" y="120" />
+            </Array>
+            <mxPoint x="195" y="130" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-9" parent="1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="reçoit l’événement" vertex="1">
+          <mxGeometry height="30" width="80" x="320" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-10" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;fillColor=#1ba1e2;strokeColor=#006EAF;" target="WFtRAj5fptTf-JqGrwJd-12" value="Apres reception">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="240" />
+            </Array>
+            <mxPoint x="295" y="240" as="sourcePoint" />
+            <mxPoint x="435" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-11" parent="1" style="text;whiteSpace=wrap;html=1;" value="exécute le déplacement" vertex="1">
+          <mxGeometry height="40" width="160" x="470" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-12" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value=":Controleur" vertex="1">
+          <mxGeometry height="300" width="100" x="410" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-13" parent="WFtRAj5fptTf-JqGrwJd-12" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="220" width="10" x="45" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-14" edge="1" parent="WFtRAj5fptTf-JqGrwJd-12" source="WFtRAj5fptTf-JqGrwJd-13" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" target="WFtRAj5fptTf-JqGrwJd-12" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint y="120" />
+              <mxPoint x="-50" y="120" />
+            </Array>
+            <mxPoint x="-65" y="120" as="sourcePoint" />
+            <mxPoint x="110" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-15" parent="WFtRAj5fptTf-JqGrwJd-12" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" value="" vertex="1">
+          <mxGeometry height="90" width="10" x="50" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-16" edge="1" parent="WFtRAj5fptTf-JqGrwJd-12" source="WFtRAj5fptTf-JqGrwJd-15" style="endArrow=classic;html=1;rounded=0;" target="WFtRAj5fptTf-JqGrwJd-15" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="130" y="140" as="sourcePoint" />
+            <mxPoint x="180" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-18" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value=":Modele(Taquin)" vertex="1">
+          <mxGeometry height="300" width="100" x="600" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-19" parent="WFtRAj5fptTf-JqGrwJd-18" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="220" width="10" x="45" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-20" edge="1" parent="WFtRAj5fptTf-JqGrwJd-18" source="WFtRAj5fptTf-JqGrwJd-19" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" target="WFtRAj5fptTf-JqGrwJd-18" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint y="120" />
+              <mxPoint x="-50" y="120" />
+            </Array>
+            <mxPoint x="-65" y="120" as="sourcePoint" />
+            <mxPoint x="110" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-22" edge="1" parent="WFtRAj5fptTf-JqGrwJd-18" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="60" y="235" as="sourcePoint" />
+            <mxPoint x="60" y="255" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-37" connectable="0" parent="WFtRAj5fptTf-JqGrwJd-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Text" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-25" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;fillColor=#0050ef;strokeColor=#001DBC;" target="WFtRAj5fptTf-JqGrwJd-19" value="">
+          <mxGeometry relative="1" x="0.4054" y="20" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points" />
+            <mxPoint x="470" y="270" as="sourcePoint" />
+            <mxPoint x="655" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-24" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;font color=&quot;#121212&quot;&gt;&lt;span style=&quot;font-size: 11px; text-wrap-mode: nowrap; background-color: rgb(222, 222, 222);&quot;&gt;Apres Execution&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="110" x="550" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-26" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;fillColor=#0050ef;strokeColor=#001DBC;" target="WFtRAj5fptTf-JqGrwJd-29" value="Mise A jour de l&#39;Etat">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="745" y="300" />
+            </Array>
+            <mxPoint x="660" y="300" as="sourcePoint" />
+            <mxPoint x="870" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-29" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value=":Vue(GrillePanel/taquinFrame)" vertex="1">
+          <mxGeometry height="330" width="200" x="870" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-30" parent="WFtRAj5fptTf-JqGrwJd-29" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="220" width="10" x="95" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-31" edge="1" parent="WFtRAj5fptTf-JqGrwJd-29" source="WFtRAj5fptTf-JqGrwJd-30" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" target="WFtRAj5fptTf-JqGrwJd-29" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint y="120" />
+              <mxPoint x="-50" y="120" />
+            </Array>
+            <mxPoint x="-65" y="120" as="sourcePoint" />
+            <mxPoint x="110" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-32" parent="WFtRAj5fptTf-JqGrwJd-29" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" value="" vertex="1">
+          <mxGeometry height="90" width="10" x="100" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-33" edge="1" parent="WFtRAj5fptTf-JqGrwJd-29" source="WFtRAj5fptTf-JqGrwJd-32" style="endArrow=classic;html=1;rounded=0;" target="WFtRAj5fptTf-JqGrwJd-32" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="130" y="140" as="sourcePoint" />
+            <mxPoint x="180" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-34" parent="1" style="text;whiteSpace=wrap;html=1;" value="rafraîchir affichage" vertex="1">
+          <mxGeometry height="40" width="130" x="1000" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="WFtRAj5fptTf-JqGrwJd-38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div style=&quot;line-height: 110%;&quot;&gt;&lt;h3 style=&quot;text-align: center; line-height: 110%;&quot;&gt;&lt;font style=&quot;font-size: 13px; line-height: 110%;&quot;&gt;Fonctionnement du MVC lors d’un clic sur une tuile&lt;/font&gt;&lt;/h3&gt;&lt;h2 style=&quot;line-height: 110%;&quot;&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 9px; line-height: 110%;&quot;&gt;Lorsqu’un joueur clique sur une tuile dans l’interface graphique du jeu du Taquin, plusieurs étapes se déroulent entre la &lt;strong&gt;Vue&lt;/strong&gt;, le &lt;strong&gt;Contrôleur&lt;/strong&gt; et le &lt;strong&gt;Modèle&lt;/strong&gt;.&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;font-size: 9px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal; line-height: 110%;&quot;&gt;Le processus se déroule de la manière suivante :&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 11px; line-height: 110%;&quot;&gt;1. L’utilisateur clique sur une tuile dans l’interface&lt;/font&gt;&lt;/strong&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 9px; line-height: 110%;&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;Le joueur clique sur un composant graphique représentant une tuile, par exemple &lt;/span&gt;&lt;code style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;TuileButton&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;. Cette action correspond à un événement généré par l’interface graphique.&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 11px; line-height: 110%;&quot;&gt;2. La Vue détecte l’événement&lt;/font&gt;&lt;/strong&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 9px; line-height: 110%;&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;Le composant graphique associé à la tuile capte le clic grâce à un &lt;/span&gt;&lt;em style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;listener&lt;/em&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt; (par exemple un &lt;/span&gt;&lt;code style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;ActionListener&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;). La vue identifie alors quelle tuile a été sélectionnée.&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 11px; line-height: 110%;&quot;&gt;3. Le contrôleur traite l’action&lt;/font&gt;&lt;/strong&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 9px; line-height: 110%;&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;Le contrôleur reçoit l’événement provenant de la vue et interprète l’action de l’utilisateur. Il décide alors quelle opération doit être réalisée dans le modèle.&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;strong style=&quot;font-size: 9px; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); line-height: 110%;&quot;&gt;4&lt;/strong&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 11px; line-height: 110%;&quot;&gt;. Le contrôleur appelle une méthode du modèle&lt;/font&gt;&lt;/strong&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 9px; line-height: 110%;&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;Le contrôleur invoque une méthode du modèle, par exemple &lt;/span&gt;&lt;code style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;deplacer(ligne, colonne)&lt;/code&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;, afin de demander le déplacement de la tuile sélectionnée.&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 11px; line-height: 110%;&quot;&gt;5. Le modèle met à jour l’état du jeu&lt;/font&gt;&lt;/strong&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 9px; line-height: 110%;&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;Le modèle vérifie si le déplacement est possible (par exemple si la tuile est voisine de la case vide). Si le mouvement est valide, il met à jour la position des tuiles et l’emplacement de la case vide.&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 11px; line-height: 110%;&quot;&gt;6. La Vue se met à jour&lt;/font&gt;&lt;/strong&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 9px; line-height: 110%;&quot;&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: normal;&quot;&gt;Après la modification du modèle, la vue est rafraîchie afin de refléter le nouvel état du puzzle. Les composants graphiques sont mis à jour et la grille affichée correspond désormais à la nouvelle configuration du Taquin.&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;&lt;p&gt;&lt;/p&gt;&lt;/h2&gt;&lt;h3 style=&quot;text-align: justify; line-height: 110%;&quot;&gt;&lt;font style=&quot;font-size: 11px; line-height: 110%;&quot;&gt;Conclusion&lt;/font&gt;&lt;/h3&gt;&lt;h2 style=&quot;line-height: 110%;&quot;&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 9px; line-height: 110%;&quot;&gt;Ce fonctionnement illustre le principe fondamental du modèle &lt;strong&gt;MVC&lt;/strong&gt; :&lt;/font&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 9px; line-height: 110%;&quot;&gt;&lt;strong&gt;La Vue&lt;/strong&gt; affiche les informations et capte les actions de l’utilisateur.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 9px; line-height: 110%;&quot;&gt;&lt;strong&gt;Le Contrôleur&lt;/strong&gt; interprète ces actions et décide des opérations à effectuer.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 9px; line-height: 110%;&quot;&gt;&lt;strong&gt;Le Modèle&lt;/strong&gt; gère la logique du jeu et les données.&lt;/font&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;font style=&quot;font-size: 9px; line-height: 110%;&quot;&gt;Cette séparation des responsabilités permet d’obtenir un programme plus clair, plus modulaire et plus facile à maintenir.&lt;/font&gt;&lt;/p&gt;&lt;/h2&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="760" width="620" x="250" y="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
