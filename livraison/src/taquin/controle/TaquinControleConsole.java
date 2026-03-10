@@ -36,18 +36,21 @@ public class TaquinControleConsole {
      * Une touche invalide affiche un message d'erreur.
      */
     public void jouer(){
+		this.jeu.melanger(20);
         Scanner scanner = new Scanner(System.in);
         System.out.println(this.jeu);
-        System.out.println("Déplacement (z = haut, w = bas, q = gauche,  s = droite) : ");
+        System.out.println("Deplacement (z = haut, w = bas, q = droite,  s = gauche) : ");
         while (!(this.jeu.fini())){
+			System.out.print("Votre mouvement : ");
             char c = scanner.nextLine().charAt(0);
             if (c == 'z') this.jeu.monter();
             else if (c == 'w') jeu.descendre();
-            else if (c == 'q') jeu.gauche();
-            else if (c == 's') jeu.droite();
+            else if (c == 'q') jeu.droite();
+            else if (c == 's') jeu.gauche();
             else System.out.println("Touche invalide ! Reprenez!");
+            System.out.println(this.jeu);
         }
         System.out.println(jeu);
-        System.out.println("Bravo, puzzle terminé !");
+        System.out.println("Bravo, puzzle termine !");
     }
 }
