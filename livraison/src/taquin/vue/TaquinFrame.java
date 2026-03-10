@@ -15,11 +15,13 @@ public class TaquinFrame extends JFrame {
 
         setTitle("Jeu du Taquin");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLayout(new BorderLayout());
 
         grille = new GrillePanel(modele);
-        add(grille);
+        add(grille, BorderLayout.CENTER);
 
-        pack();
+        setSize(600,600); // fenêtre plus grande
+        setLocationRelativeTo(null); // centre la fenêtre
         setVisible(true);
     }
 }

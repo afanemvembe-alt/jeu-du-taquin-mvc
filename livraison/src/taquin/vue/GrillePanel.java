@@ -15,13 +15,14 @@ public class GrillePanel extends JPanel {
         int lignes = modele.getLigne();
         int colonnes = modele.getColonne();
 
-        setLayout(new GridLayout(lignes, colonnes));
+        setLayout(new GridLayout(lignes, colonnes, 5, 5)); // espace entre boutons
+        setBackground(Color.DARK_GRAY);
 
-        for(int i = 0; i < lignes; i++){
-            for(int j = 0; j < colonnes; j++){
+        for (int i = 0; i < lignes; i++) {
+            for (int j = 0; j < colonnes; j++) {
 
-                JButton b = new JButton("" + modele.getValeur(i,j));
-                add(b);
+                TuileButton bouton = new TuileButton(modele, i, j);
+                add(bouton);
 
             }
         }
