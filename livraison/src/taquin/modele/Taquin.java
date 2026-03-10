@@ -1,4 +1,4 @@
-package modele;
+package taquin.modele;
 
 import java.util.Random;
 
