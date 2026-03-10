@@ -4,26 +4,40 @@ import javax.swing.*;
 import java.awt.*;
 import taquin.modele.Taquin;
 
+/**
+ * Panel qui affiche le Taquin sous forme de boutons.
+ * Chaque bouton représente une case et réagit aux clics.
+ */
 public class GrillePanel extends JPanel {
 
     private Taquin modele;
+    private TuileButton[][] boutons;
 
     public GrillePanel(Taquin modele) {
-
         this.modele = modele;
 
-        int lignes = modele.getLigne();
-        int colonnes = modele.getColonne();
-
-        setLayout(new GridLayout(lignes, colonnes, 5, 5)); // espace entre boutons
+        // Création du layout selon le nombre de lignes et colonnes
+        setLayout(new GridLayout(modele.getLigne(), modele.getColonne(), 5, 5));
         setBackground(Color.DARK_GRAY);
 
-        for (int i = 0; i < lignes; i++) {
-            for (int j = 0; j < colonnes; j++) {
+        boutons = new TuileButton[modele.getLigne()][modele.getColonne()];
 
-                TuileButton bouton = new TuileButton(modele, i, j);
-                add(bouton);
+        // Création des boutons pour chaque case
+        for (int i = 0; i < modele.getLigne(); i++) {
+            for (int j = 0; j < modele.getColonne(); j++) {
+                boutons[i][j] = new TuileButton(modele, i, j, this);
+                add(boutons[i][j]);
+            }
+        }
+    }
 
+    /**
+     * Mise à jour des textes et couleurs des boutons après chaque déplacement
+     */
+    public void rafraichir() {
+        for (int i = 0; i < modele.getLigne(); i++) {
+            for (int j = 0; j < modele.getColonne(); j++) {
+                boutons[i][j].mettreAJour();
             }
         }
     }
