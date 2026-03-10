@@ -1,4 +1,4 @@
-package modele;
+package taquin.modele;
 
 import java.util.Scanner; // Importation pour lire les entrées du clavier
 
