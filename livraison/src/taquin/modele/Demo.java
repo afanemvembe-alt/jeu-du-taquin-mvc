@@ -17,7 +17,7 @@ public class Demo {
         System.out.println("--- BIENVENUE DANS LE JEU DU TAQUIN ---");
         System.out.println("Commandes : Z (Haut), S (Bas), Q (Gauche), D (Droite), STOP (Quitter)");
 
-        // Boucle de jeu : s'arrête si l'utilisateur tape "STOP"
+        // Boucle de jeu : s'arrete si l'utilisateur tape "STOP"
         while (!choix.equalsIgnoreCase("STOP")) {
             
             // On affiche l'état actuel du tableau
@@ -28,19 +28,19 @@ public class Demo {
             System.out.print("Votre mouvement : ");
             choix = sc.next().toUpperCase(); // On force en majuscule pour simplifier
 
-            // On appelle la méthode correspondante dans ton modèle
+            // On appelle la méthode correspondante du modele
             switch (choix) {
                 case "Z":
-                    tableau.monter(); // Déplace la pièce sous le vide vers le haut
+                    tableau.monter(); // Deplace la piece sous le vide vers le haut
                     break;
                 case "S":
-                    tableau.descendre(); // Déplace la pièce au-dessus du vide vers le bas
+                    tableau.descendre(); // Deplace la pièce au dessus du vide vers le bas
                     break;
                 case "Q":
-                    tableau.gauche(); // Déplace la pièce à droite du vide vers la gauche
+                    tableau.gauche(); // Deplace la piece à droite du vide vers la gauche
                     break;
                 case "D":
-                    tableau.droite(); // Déplace la pièce à gauche du vide vers la droite
+                    tableau.droite(); // Deplace la piece à gauche du vide vers la droite
                     break;
                 case "STOP":
                     System.out.println("Partie interrompue.");
@@ -51,7 +51,7 @@ public class Demo {
             }
         }
 
-        sc.close(); // On ferme le scanner proprement
+        sc.close();
     }
 }
 
