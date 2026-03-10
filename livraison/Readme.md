@@ -47,6 +47,9 @@ Quelques précisions sur la vue console si besoin :
 	
 	
 
+
+
+
 	
 	
 	Comment fonctionne le clic sur une tuile (Pour mieux comprendre et avancer )
@@ -72,3 +75,11 @@ MVC : le modèle gère la logique, la vue gère l’affichage, le contrôleur g�
 TuileButton est le lien entre la Vue et le Modèle : il reçoit le clic et appelle le modèle.
 
 Taquin ne connaît pas la vue : il se contente de gérer l’état du puzzle.
+
+
+
+# Compilation
+javac -d build src/taquin/modele/*.java src/taquin/vue/*.java src/taquin/controle/*.java
+
+# Exécution du Demo graphique
+java -cp build taquin.controle.DemoGraphique
