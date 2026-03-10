@@ -22,8 +22,8 @@ public class Taquin {
                 valeur++; // Passage au chiffre suivant
             }
         }
-        table[line - 1][row - 1] = 0; // Placement du vide (0) sur la dernière case
-        this.tableau = table; // Assignation du tableau rempli à l'attribut de classe
+        table[line - 1][row - 1] = 0; // Placement du vide sur la derniere case
+        this.tableau = table; 
 
         // Initialiser la position du vide (en bas à droite au départ)
         this.videL = line - 1; // Ligne de la case 0
@@ -42,14 +42,44 @@ public class Taquin {
         if (estPossible(l, c)) { // On vérifie d'abord si le mouvement est autorisé
             this.tableau[videL][videC] = this.tableau[l][c]; // La case vide prend la valeur de la case choisie
             this.tableau[l][c] = 0; // La case choisie devient la nouvelle case vide
-            this.videL = l; // Mise à jour de la position du vide (ligne)
-            this.videC = c; // Mise à jour de la position du vide (colonne)
+            this.videL = l; // Mise à jour de la position du vide
+            this.videC = c; // Mise à jour de la position du vide
         }
     }
     
     /*Une methode "fini" qui renvoie vrai si le taquin(puzzle) est en ordre
      * renvoie faux si le taquin(puzzle) est toujours en desordre
     */
+   public boolean fini() {
+        int[][] table = new int[ligne][colonne]; 
+        int valeur = 1; 
+        for (int i = 0; i < table.length; i++) { 
+            for (int j = 0; j < table[i].length; j++){
+                table[i][j] = valeur;
+                valeur++;
+            }
+        }
+        boolean estVrai= true;
+        for (int i = 0; i < tableau.length; i++) {
+            for (int j = 0; j < tableau[i].length; j++) {
+                if(table[i][j]==tableau[i][j]){
+                    estVrai = estVrai && true;
+                }
+                estVrai = estVrai && false;
+                
+            }
+        }
+        return estVrai;
+   }
+   
+
+
+
+
+
+
+
+
 
     // Méthodes de déplacement (Z, Q, S, W)
     public void monter() { echange(videL + 1, videC); } // On fait monter la pièce située sous le vide
