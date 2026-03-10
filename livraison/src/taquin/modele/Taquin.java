@@ -46,6 +46,10 @@ public class Taquin {
             this.videC = c; // Mise à jour de la position du vide (colonne)
         }
     }
+    
+    /*Une methode "fini" qui renvoie vrai si le taquin(puzzle) est en ordre
+     * renvoie faux si le taquin(puzzle) est toujours en desordre
+    */
 
     // Méthodes de déplacement (Z, Q, S, W)
     public void monter() { echange(videL + 1, videC); } // On fait monter la pièce située sous le vide
