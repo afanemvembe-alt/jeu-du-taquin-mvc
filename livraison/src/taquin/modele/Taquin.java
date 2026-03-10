@@ -50,28 +50,32 @@ public class Taquin {
     /*Une methode "fini" qui renvoie vrai si le taquin(puzzle) est en ordre
      * renvoie faux si le taquin(puzzle) est toujours en desordre
     */
-   public boolean fini() {
-        int[][] table = new int[ligne][colonne]; 
-        int valeur = 1; 
-        for (int i = 0; i < table.length; i++) { 
-            for (int j = 0; j < table[i].length; j++){
-                table[i][j] = valeur;
-                valeur++;
+   /* Une methode "fini" qui renvoie vrai si le taquin(puzzle) est en ordre
+ * renvoie faux si le taquin(puzzle) est toujours en desordre
+ */
+public boolean fini() {
+    int valeur= 1;
+    
+    // On parcourt
+    for (int i = 0; i < ligne; i++) { 
+        for (int j = 0; j < colonne; j++) {
+            
+            // Si on est sur la dernière case
+            if (i == ligne - 1 && j == colonne - 1) {
+                // Elle doit contenir 0 pour que ce soit fini
+                return this.tableau[i][j] == 0;
             }
-        }
-        boolean estVrai= true;
-        for (int i = 0; i < tableau.length; i++) {
-            for (int j = 0; j < tableau[i].length; j++) {
-                if(table[i][j]==tableau[i][j]){
-                    estVrai = estVrai && true;
-                }
-                estVrai = estVrai && false;
-                
+            
+            // Pour les autres on compare la valeur actuelle avec ce qu'on attend
+            if (this.tableau[i][j] != valeur) {
+                return false;
             }
+            
+            valeur++;
         }
-        return estVrai;
-   }
-   
+    }
+    return true; 
+}
 
 
 
