@@ -1,24 +1,25 @@
-package taquin.vue;
+package taquin.controle;
 
 import javax.swing.*;
 import java.awt.*;
-import taquin.modele.Taquin;
+import taquin.modele.*;
+import taquin.vue.*;
 
 /**
  * Fenêtre principale du jeu Taquin.
  */
-public class TaquinFrame extends JFrame {
+public class TaquinControleSwing extends JFrame {
 
     private Taquin modele;
-    private GrillePanel grille;
+    private TaquinVueSwing grille;
 
-    public TaquinFrame(Taquin modele) {
+    public TaquinControleSwing(Taquin modele) {
         this.modele = modele;
 
         setTitle("Jeu du Taquin");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        grille = new GrillePanel(modele);
+        grille = new TaquinVueSwing(modele);
         add(grille, BorderLayout.CENTER);
 
         pack();

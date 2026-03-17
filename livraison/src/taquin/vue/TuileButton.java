@@ -3,7 +3,7 @@ package taquin.vue;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import taquin.modele.Taquin;
+import taquin.modele.*;
 
 /**
  * Bouton représentant une tuile du Taquin.
@@ -13,9 +13,9 @@ public class TuileButton extends JButton implements ActionListener {
 
     private Taquin modele;
     private int ligne, colonne;
-    private GrillePanel panel;
+    private TaquinVueSwing panel;
 
-    public TuileButton(Taquin modele, int l, int c, GrillePanel panel) {
+    public TuileButton(Taquin modele, int l, int c, TaquinVueSwing panel) {
         this.modele = modele;
         this.ligne = l;
         this.colonne = c;

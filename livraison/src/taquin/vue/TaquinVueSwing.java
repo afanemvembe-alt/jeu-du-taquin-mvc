@@ -2,18 +2,18 @@ package taquin.vue;
 
 import javax.swing.*;
 import java.awt.*;
-import taquin.modele.Taquin;
+import taquin.modele.*;
 
 /**
  * Panel qui affiche le Taquin sous forme de boutons.
  * Chaque bouton représente une case et réagit aux clics.
  */
-public class GrillePanel extends JPanel {
+public class TaquinVueSwing extends JPanel implements EcouteurTaquin {
 
     private Taquin modele;
     private TuileButton[][] boutons;
 
-    public GrillePanel(Taquin modele) {
+    public TaquinVueSwing(Taquin modele) {
         this.modele = modele;
 
         // Création du layout selon le nombre de lignes et colonnes
@@ -41,4 +41,9 @@ public class GrillePanel extends JPanel {
             }
         }
     }
+    
+    @Override	
+	public void taquinUpdated(Object source){
+		this.rafraichir();
+	}
 }
