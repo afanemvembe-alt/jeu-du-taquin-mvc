@@ -8,22 +8,21 @@ import taquin.vue.*;
 /**
  * Fenêtre principale du jeu Taquin.
  */
-public class TaquinControleSwing extends JFrame {
+public class TaquinControleSwing implements VueListener {
 
     private Taquin modele;
-    private TaquinVueSwing grille;
+    private TaquinFrame frame;
 
     public TaquinControleSwing(Taquin modele) {
         this.modele = modele;
+        this.frame = new TaquinFrame(modele, this);
+    }
 
-        setTitle("Jeu du Taquin");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        grille = new TaquinVueSwing(modele);
-        add(grille, BorderLayout.CENTER);
-
-        pack();
-        setLocationRelativeTo(null); // centrer la fenêtre
-        setVisible(true);
+    @Override
+    public void clicTuile(int l, int c) {
+        if (modele.estPossible(l, c)) {
+            modele.echange(l, c);
+            frame.rafraichir();
+        }
     }
 }
