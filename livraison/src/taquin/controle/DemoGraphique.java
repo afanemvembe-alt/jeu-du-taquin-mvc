@@ -1,7 +1,7 @@
 package taquin.controle;
 
-import taquin.modele.Taquin;
-import taquin.vue.TaquinFrame;
+import taquin.modele.*;
+import taquin.vue.*;
 
 public class DemoGraphique {
 
@@ -9,7 +9,7 @@ public class DemoGraphique {
         Taquin jeu = new Taquin(4, 4);
         jeu.melanger(100);
 
-        new TaquinFrame(jeu); // lance la fenêtre graphique
+        new TaquinControleSwing(jeu); // lance la fenêtre graphique
     }
 }
 

@@ -2,7 +2,7 @@ package taquin.modele;
 
 import java.util.Random;
 
-public class Taquin {
+public class Taquin extends AbstractTaquinEcoutable{
     private int ligne;
     private int colonne;
     private int[][] tableau; 
@@ -43,36 +43,37 @@ public class Taquin {
             this.tableau[l][c] = 0;  
             this.videL = l; 
             this.videC = c;
+            this.taquinChangement();
         }
     }
     
     /*Une methode "fini" qui renvoie vrai si le taquin(puzzle) est en ordre
      * renvoie faux si le taquin(puzzle) est toujours en desordre
     */
-   /* Une methode "fini" qui renvoie vrai si le taquin(puzzle) est en ordre
- * renvoie faux si le taquin(puzzle) est toujours en desordre
- */
-public boolean fini() {
-    int valeur= 1;
-    for (int i = 0; i < ligne; i++) { 
-        for (int j = 0; j < colonne; j++) {
-            
-            // Si on est sur la derniere case
-            if (i == ligne - 1 && j == colonne - 1) {
-                // contient 0 pour que ce soit fini
-                return this.tableau[i][j] == 0;
-            }
-            
-            // Pour les autres on compare la valeur actuelle avec ce qu'on attend
-            if (this.tableau[i][j] != valeur) {
-                return false;
-            }
-            
-            valeur++;
-        }
-    }
-    return true; 
-}
+    /* Une methode "fini" qui renvoie vrai si le taquin(puzzle) est en ordre
+	 * renvoie faux si le taquin(puzzle) est toujours en desordre
+	*/
+	public boolean fini() {
+		int valeur= 1;
+		for (int i = 0; i < ligne; i++) { 
+			for (int j = 0; j < colonne; j++) {
+				
+				// Si on est sur la derniere case
+				if (i == ligne - 1 && j == colonne - 1) {
+					// contient 0 pour que ce soit fini
+					return this.tableau[i][j] == 0;
+				}
+				
+				// Pour les autres on compare la valeur actuelle avec ce qu'on attend
+				if (this.tableau[i][j] != valeur) {
+					return false;
+				}
+				
+				valeur++;
+			}
+		}
+		return true; 
+	}
 
 
 
@@ -92,6 +93,7 @@ public boolean fini() {
             else if (dir == 2) gauche(); // aller à gauche
             else if (dir == 3) droite(); 
         }
+        this.taquinChangement();
     }
 
     // Getters pour que la Vue puisse lire les données sans modifier le modele

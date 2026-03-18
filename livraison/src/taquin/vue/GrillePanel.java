@@ -1,43 +1,48 @@
 package taquin.vue;
 
-import javax.swing.*;
 import java.awt.*;
-import taquin.modele.Taquin;
+import javax.swing.*;
+import taquin.modele.*;
 
 /**
- * Panel qui affiche le Taquin sous forme de boutons.
- * Chaque bouton représente une case et réagit aux clics.
+ * Panel affichant la grille du Taquin.
+ * Contient un bouton par case et permet de rafraîchir l'affichage.
  */
 public class GrillePanel extends JPanel {
 
-    private Taquin modele;
     private TuileButton[][] boutons;
+    private Taquin modele;  // lecture seule
+    private VueListener listener;
 
-    public GrillePanel(Taquin modele) {
+    public GrillePanel(Taquin modele, VueListener listener) {
         this.modele = modele;
+        this.listener = listener;
 
-        // Création du layout selon le nombre de lignes et colonnes
-        setLayout(new GridLayout(modele.getLigne(), modele.getColonne(), 5, 5));
-        setBackground(Color.DARK_GRAY);
+        int lignes = modele.getLigne();
+        int colonnes = modele.getColonne();
+        setLayout(new GridLayout(lignes, colonnes));
 
-        boutons = new TuileButton[modele.getLigne()][modele.getColonne()];
+        boutons = new TuileButton[lignes][colonnes];
 
-        // Création des boutons pour chaque case
-        for (int i = 0; i < modele.getLigne(); i++) {
-            for (int j = 0; j < modele.getColonne(); j++) {
-                boutons[i][j] = new TuileButton(modele, i, j, this);
+        for (int i = 0; i < lignes; i++) {
+            for (int j = 0; j < colonnes; j++) {
+                boutons[i][j] = new TuileButton(i, j, listener);
                 add(boutons[i][j]);
             }
         }
+
+        rafraichir();
     }
 
     /**
-     * Mise à jour des textes et couleurs des boutons après chaque déplacement
+     * Met à jour l'affichage en fonction de l'état du modèle.
      */
     public void rafraichir() {
         for (int i = 0; i < modele.getLigne(); i++) {
             for (int j = 0; j < modele.getColonne(); j++) {
-                boutons[i][j].mettreAJour();
+                int val = modele.getValeur(i, j);
+                boutons[i][j].setText(val == 0 ? "" : String.valueOf(val));
+                boutons[i][j].setEnabled(val != 0 && modele.estPossible(i, j));
             }
         }
     }
