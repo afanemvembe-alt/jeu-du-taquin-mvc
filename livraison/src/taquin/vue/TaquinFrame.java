@@ -43,7 +43,7 @@ public class TaquinFrame extends JFrame {
         // --------------------
         // Compteur de coups
         // --------------------
-        labelCoups = new JLabel("Coups : 0 | Indices : 3");
+        labelCoups = new JLabel("Coups : 0| Indices : 3");
         labelCoups.setFont(new Font("Arial", Font.BOLD, 16));
         labelCoups.setHorizontalAlignment(SwingConstants.CENTER);
         labelCoups.setForeground(Color.WHITE); // compteur en blanc
