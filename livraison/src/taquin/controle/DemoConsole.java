@@ -1,3 +1,4 @@
+
 package taquin.controle;
 
 import taquin.modele.*;
@@ -15,6 +16,17 @@ public class DemoConsole{
      * Elle cree un plateau de taquin avec des dimensions definies,
      * initialise le contrôleur console, puis demarre le jeu.
      */
+	public static void main(String[] args){
+        Taquin tableau= new Taquin(4, 5);
+        TaquinControleConsole jeu= new TaquinControleConsole(tableau);
+        jeu.jouer();
+    }
+}
+package taquin.controle;
+
+import taquin.modele.*;
+
+public class DemoConsole{
 	public static void main(String[] args){
         Taquin tableau= new Taquin(4, 5);
         TaquinControleConsole jeu= new TaquinControleConsole(tableau);
