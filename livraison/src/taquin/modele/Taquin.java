@@ -168,3 +168,5 @@ public class Taquin extends AbstractTaquinEcoutable {
         return res;
     }
 }
+
+// les commentaires
