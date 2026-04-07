@@ -41,34 +41,39 @@ public class TaquinControleSwing extends KeyAdapter {
     /**
      * Gestion du clavier (Z, Q, S, W)
      */
-    @Override
-public void keyPressed(KeyEvent e) {
-    int code = e.getKeyCode();
     
-    switch (code) {
-        case KeyEvent.VK_Z: 
-        case KeyEvent.VK_UP:    
-            // Pour que le vide MONTE visuellement :
-            modele.monter(); 
-            break;
-            
-        case KeyEvent.VK_S: 
-        case KeyEvent.VK_DOWN:  
-            // Pour que le vide DESCENDE visuellement :
-            modele.descendre(); 
-            break;
-            
-        case KeyEvent.VK_Q: 
-        case KeyEvent.VK_LEFT:  
-            // Pour que le vide aille à GAUCHE visuellement :
-            modele.gauche(); 
-            break;
-            
-        case KeyEvent.VK_D: 
-        case KeyEvent.VK_RIGHT: 
-            // Pour que le vide aille à DROITE visuellement :
-            modele.droite(); 
-            break;
+/**
+     * Gestion du clavier (Z, Q, S, D/W) conforme aux exigences :
+     * Z : déplace l'élément du haut (le vide monte)
+     * S : déplace l'élément du bas (le vide descend)
+     * Q : déplace l'élément de gauche (le vide va à gauche)
+     * D/W : déplace l'élément de droite (le vide va à droite)
+     */
+    @Override
+    public void keyPressed(KeyEvent e) {
+        int code = e.getKeyCode();
+        
+        switch (code) {
+            case KeyEvent.VK_Z: 
+            case KeyEvent.VK_UP:    
+                modele.monter(); // La pièce du haut descend dans le vide
+                break;
+                
+            case KeyEvent.VK_S: 
+            case KeyEvent.VK_DOWN:  
+                modele.descendre(); // La pièce du bas monte dans le vide
+                break;
+                
+            case KeyEvent.VK_Q: 
+            case KeyEvent.VK_LEFT:  
+                modele.gauche(); // La pièce de gauche glisse à droite
+                break;
+                
+            case KeyEvent.VK_D: 
+            case KeyEvent.VK_W: // Le sujet mentionne W comme alternative à D
+            case KeyEvent.VK_RIGHT: 
+                modele.droite(); // La pièce de droite glisse à gauche
+                break;
+        }
     }
-}
 }
