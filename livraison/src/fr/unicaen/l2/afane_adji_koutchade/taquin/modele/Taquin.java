@@ -185,15 +185,29 @@ public class Taquin extends AbstractTaquinEcoutable {
     }
 
     // --- MOUVEMENTS ---
+// --- MOUVEMENTS (Action sur la case vide) ---
 
-    /** Déplace la tuile située en dessous du vide vers le haut. */
-    public void monter() { echange(videL + 1, videC); }
-    /** Déplace la tuile située au dessus du vide vers le bas. */
-    public void descendre() { echange(videL - 1, videC); }
-    /** Déplace la tuile située à droite du vide vers la gauche. */
-    public void gauche() { echange(videL, videC + 1); }
-    /** Déplace la tuile située à gauche du vide vers la droite. */
-    public void droite() { echange(videL, videC - 1); }
+    /** Déplace la case vide vers le HAUT (Ligne - 1) */
+    public void monter() { 
+        echange(videL - 1, videC); 
+    }
+
+    /** Déplace la case vide vers le BAS (Ligne + 1) */
+    public void descendre() { 
+        echange(videL + 1, videC); 
+    }
+
+    /** Déplace la case vide vers la GAUCHE (Colonne - 1) */
+    public void gauche() { 
+        echange(videL, videC - 1); 
+    }
+
+    /** Déplace la case vide vers la DROITE (Colonne + 1) */
+    public void droite() { 
+        echange(videL, videC + 1); 
+    }
+
+
 
     /**
      * Mélange la grille en effectuant n mouvements aléatoires valides.
@@ -201,7 +215,7 @@ public class Taquin extends AbstractTaquinEcoutable {
      */
     public void melanger(int n) {
         Random rand = new Random();
-        historique.clear();
+        historique.clear(); // On vide l'historique pour ne pas pouvoir tricher
         for (int i = 0; i < n; i++) {
             int dir = rand.nextInt(4);
             if (dir == 0) monter();
@@ -213,7 +227,6 @@ public class Taquin extends AbstractTaquinEcoutable {
         indicesRestants = 3;
         this.taquinChangement();
     }
-
     /**
      * Retourne une représentation textuelle de la grille.
      * @return chaîne de caractères représentant le plateau

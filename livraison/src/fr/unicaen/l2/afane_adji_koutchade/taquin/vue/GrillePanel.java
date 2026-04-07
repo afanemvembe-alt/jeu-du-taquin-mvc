@@ -11,17 +11,30 @@ import javax.imageio.ImageIO;
 
 /**
  * Panel affichant la grille de jeu composée de boutons.
+ * Gère l'affichage numérique et le mode image avec découpage dynamique.
  */
 public class GrillePanel extends JPanel {
+    /** Matrice des boutons représentant les tuiles du jeu */
     private TuileButton[][] boutons;
+    /** Référence vers le modèle pour connaître l'état du plateau */
     private Taquin modele;
+    /** Référence vers le contrôleur pour la gestion des clics */
     private TaquinControleSwing controleur;
     
+    /** État de l'affichage : true pour images, false pour nombres */
     private boolean modeImage = false;
+    /** Tableau 3D stockant les images découpées [indexImage][ligne][colonne] */
     private BufferedImage[][][] imagesDecoupees;
+    /** Tableau stockant les images originales pour l'aperçu */
     private BufferedImage[] imagesOriginales;
+    /** Index de l'image actuellement affichée */
     private int imageCourante = 0;
 
+    /**
+     * Constructeur de la grille.
+     * @param modele le modèle du taquin
+     * @param controleur le contrôleur Swing
+     */
     public GrillePanel(Taquin modele, TaquinControleSwing controleur) {
         this.modele = modele;
         this.controleur = controleur;
@@ -50,6 +63,9 @@ public class GrillePanel extends JPanel {
         rafraichir();
     }
 
+    /**
+     * Charge les ressources d'images et les découpe en fonction de la taille de la grille.
+     */
     private void chargerImages() {
         int n = modele.getLigne();
         int m = modele.getColonne();
@@ -84,6 +100,9 @@ public class GrillePanel extends JPanel {
         }
     }
 
+    /**
+     * Met à jour l'affichage de la grille (visibilité, textes, icônes et couleurs).
+     */
     public void rafraichir() {
         int nbColonnes = modele.getColonne();
         for (int i = 0; i < modele.getLigne(); i++) {
@@ -126,19 +145,33 @@ public class GrillePanel extends JPanel {
         this.repaint();
     }
 
+    /**
+     * Retourne l'état actuel du mode d'affichage.
+     * @return true si le mode image est actif
+     */
     public boolean estModeImage() {
         return modeImage;
     }
 
+    /**
+     * Retourne l'image d'origine complète correspondant à la sélection actuelle.
+     * @return la BufferedImage de l'image entière
+     */
     public BufferedImage getImageOriginaleCourante() {
         return (imagesOriginales != null) ? imagesOriginales[imageCourante] : null;
     }
 
+    /**
+     * Alterne entre l'affichage par numéros et l'affichage par images.
+     */
     public void changerModeImage() {
         this.modeImage = !this.modeImage;
         rafraichir();
     }
 
+    /**
+     * Bascule sur l'image suivante dans la liste des ressources.
+     */
     public void imageSuivante() {
         imageCourante = (imageCourante + 1) % imagesDecoupees.length;
         rafraichir();

@@ -42,13 +42,33 @@ public class TaquinControleSwing extends KeyAdapter {
      * Gestion du clavier (Z, Q, S, W)
      */
     @Override
-    public void keyPressed(KeyEvent e) {
-        char touche = Character.toLowerCase(e.getKeyChar());
-        switch (touche) {
-            case 'z': modele.monter(); break;
-            case 's': modele.descendre(); break;
-            case 'q': modele.gauche(); break;
-            case 'w': modele.droite(); break;
-        }
+public void keyPressed(KeyEvent e) {
+    int code = e.getKeyCode();
+    
+    switch (code) {
+        case KeyEvent.VK_Z: 
+        case KeyEvent.VK_UP:    
+            // Pour que le vide MONTE visuellement :
+            modele.monter(); 
+            break;
+            
+        case KeyEvent.VK_S: 
+        case KeyEvent.VK_DOWN:  
+            // Pour que le vide DESCENDE visuellement :
+            modele.descendre(); 
+            break;
+            
+        case KeyEvent.VK_Q: 
+        case KeyEvent.VK_LEFT:  
+            // Pour que le vide aille à GAUCHE visuellement :
+            modele.gauche(); 
+            break;
+            
+        case KeyEvent.VK_D: 
+        case KeyEvent.VK_RIGHT: 
+            // Pour que le vide aille à DROITE visuellement :
+            modele.droite(); 
+            break;
     }
+}
 }

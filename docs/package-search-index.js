@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"fr.unicaen.l2.afane_adji_koutchade.taquin.controleur"},{"l":"fr.unicaen.l2.afane_adji_koutchade.taquin.modele"},{"l":"fr.unicaen.l2.afane_adji_koutchade.taquin.util"},{"l":"fr.unicaen.l2.afane_adji_koutchade.taquin.vue"}];updateSearchResults();

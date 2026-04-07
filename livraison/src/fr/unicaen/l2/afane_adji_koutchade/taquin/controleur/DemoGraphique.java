@@ -1,7 +1,7 @@
 package fr.unicaen.l2.afane_adji_koutchade.taquin.controleur;
 
-import javax.swing.SwingUtilities;
 import fr.unicaen.l2.afane_adji_koutchade.taquin.modele.Taquin;
+import javax.swing.SwingUtilities;
 
 /**
  * Point d'entrée pour la version avec interface graphique (Swing).
