@@ -16,7 +16,7 @@ public class TuileButton extends JButton {
      * Constructeur d'un bouton tuile.
      * @param l index de la ligne
      * @param c index de la colonne
-     * @param controleur référence vers le contrôleur pour gérer le clic
+     * @param controleur référence vers le controleur pour gérer le clic
      */
     public TuileButton(int l, int c, TaquinControleSwing controleur) {
         this.ligne = l;

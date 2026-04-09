@@ -8,13 +8,13 @@ import java.awt.image.BufferedImage;
 import javax.swing.*;
 
 /**
- * Fenêtre principale du Taquin respectant le pattern Observer (Ecouteur).
+ * Fenetre principale du Taquin respectant le pattern Observer (Ecouteur).
  * Cette classe gère l'interface utilisateur globale, le panneau latéral
- * et les notifications provenant du modèle.
+ * et les notifications provenant du modele.
  */
 public class TaquinFrame extends JFrame implements EcouteurTaquin {
 
-    /** Référence vers le modèle de données */
+    /** Référence vers le modele de donnees */
     private Taquin modele;
     /** Référence vers le contrôleur pour les événements */
     private TaquinControleSwing controleur;
