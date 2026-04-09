@@ -6,7 +6,7 @@ import fr.unicaen.l2.afane_adji_koutchade.taquin.util.AbstractTaquinEcoutable;
 
 /**
  * Modèle du jeu de Taquin (Logique pure).
- * Ce fichier gère la grille et les déplacements sans connaître l'interface graphique.
+ * Ce fichier gere la grille et les déplacements sans connaître l'interface graphique.
  */
 public class Taquin extends AbstractTaquinEcoutable {
 
@@ -14,7 +14,7 @@ public class Taquin extends AbstractTaquinEcoutable {
     private int ligne;
     /** Nombre de colonnes de la grille */
     private int colonne;
-    /** Matrice représentant l'état actuel du plateau */
+    /** Matrice representant l'état actuel du plateau */
     private int[][] tableau;
 
     /** Pile stockant les états précédents pour la fonctionnalité de retour */
@@ -113,7 +113,7 @@ public class Taquin extends AbstractTaquinEcoutable {
             videL = l;
             videC = c;
             nbCoups++;
-            // On prévient les écouteurs (Vue) que le modèle a changé
+            // On previent les ecouteurs (Vue) que le modèle a changé
             this.taquinChangement(); 
         }
     }

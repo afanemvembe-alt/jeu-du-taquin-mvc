@@ -4,7 +4,7 @@ import fr.unicaen.l2.afane_adji_koutchade.taquin.modele.Taquin;
 import javax.swing.SwingUtilities;
 
 /**
- * Point d'entrée pour la version avec interface graphique (Swing).
+ * Point d'entrèe pour la version avec interface graphique (Swing).
  */
 public class DemoGraphique {
 
@@ -22,10 +22,10 @@ public class DemoGraphique {
             // 1. Création du Modèle
             Taquin jeu = new Taquin(4, 4);
             
-            // 2. Mélange
+            // 2. Melange
             jeu.melanger(100);
 
-            // 3. Création du Contrôleur (qui créera lui-même la TaquinFrame)
+            // 3. Creation du Controleur (qui créera lui-même la TaquinFrame)
             new TaquinControleSwing(jeu);
         });
     }

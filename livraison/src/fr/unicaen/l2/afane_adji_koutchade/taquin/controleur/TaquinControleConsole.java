@@ -5,7 +5,7 @@ import fr.unicaen.l2.afane_adji_koutchade.taquin.modele.Taquin;
 import fr.unicaen.l2.afane_adji_koutchade.taquin.vue.TaquinVueConsole;
 
 /**
- * Contrôleur pour le jeu de Taquin en mode Console.
+ * Controleur pour le jeu de Taquin en mode Console.
  * Respecte l'architecture MVC : il reçoit les entrées et modifie le modèle.
  */
 public class TaquinControleConsole {
@@ -56,7 +56,7 @@ public class TaquinControleConsole {
                         continue;
                 }
                 // Note : On n'appelle pas explicitement vue.afficher() ici 
-                // car la vue est un ÉCOUTEUR qui s'affiche seule quand le modèle change.
+                // car la vue est un ÉCOUTEUR qui s'affiche seule quand le modele change.
             }
             
             System.out.println("Bravo, puzzle terminé en " + jeu.getNbCoups() + " coups !");
