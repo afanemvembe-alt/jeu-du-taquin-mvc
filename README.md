@@ -1,18 +1,29 @@
-# Projet Taquin - L2 Informatique
-**Membres du groupe :** Afane, Lo, Koutchade
+# Projet L2 - Jeu du Taquin (MVC)
 
-## 🚀 Présentation
-Ce projet est une implémentation du jeu de Taquin en Java, respectant l'architecture **MVC** (Modèle-Vue-Contrôleur). Il permet de jouer en mode console et en mode graphique (Swing).
+Ce projet est une implémentation du jeu du Taquin en Java, réalisée dans le cadre de la licence informatique (L2). Il repose sur une architecture **MVC (Modèle-Vue-Contrôleur)** et utilise le **Pattern Observer** pour la communication entre le modèle et l'interface graphique.
 
-## 🛠️ Fonctionnalités
-* **Mode Chiffres :** Jouez avec des numéros classiques.
-* **Mode Image (Extension) :** Découpage dynamique d'images JPG pour transformer le puzzle en photo.
-* **Couleurs (Extension) :** Les cases pouvant être déplacées sont colorées en vert.
-* **Contrôles :** Support de la souris et du clavier (touches Z, Q, S, D).
+## 👥 Équipe
+* **Afane**
+* **Adji**
+* **Koutchade**
 
-## 📦 Comment lancer le projet ?
-Le projet est livré avec un fichier JAR déjà compilé.
+## ✨ Fonctionnalités
+* **Mode Graphique (Swing)** : Une interface intuitive pour jouer à la souris.
+* **Découpage d'Images (Extension)** : Le jeu découpe dynamiquement des fichiers JPG pour transformer le puzzle en photo.
+* **Aide Visuelle (Extension)** : Coloration en vert des cases adjacentes au vide (déplaçables).
+* **Contrôles Hybrides** : Support complet de la souris et du clavier (touches **Z, Q, S, D**).
+* **Mode Console** : Une version textuelle est également disponible pour le debug.
 
-### Exécuter l'interface graphique :
+## 📁 Structure du Projet
+* `src/` : Code source Java organisé par packages.
+* `bin/` : Fichiers compilés (.class).
+* `livraison/dist/` : Contient l'exécutable `Taquin.jar`.
+* `livraison/doc/` : Documentation technique (Javadoc) et Rapport final.
+* `livraison/doc/rapport/` : Rapport de projet détaillant l'architecture MVC et UML.
+
+## 🚀 Comment lancer le projet ?
+
+### 1. Utiliser l'exécutable (Recommandé)
+Le projet est livré avec un fichier JAR prêt à l'emploi. Depuis la racine du projet :
 ```bash
 java -jar livraison/dist/Taquin.jar
