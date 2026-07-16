@@ -7,21 +7,21 @@ Ce projet est une implémentation du jeu du Taquin en Java, réalisée dans le c
 * **Adji**
 * **Koutchade**
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 * **Mode Graphique (Swing)** : Une interface intuitive pour jouer à la souris.
 * **Découpage d'Images (Extension)** : Le jeu découpe dynamiquement des fichiers JPG pour transformer le puzzle en photo.
 * **Aide Visuelle (Extension)** : Coloration en vert des cases adjacentes au vide (déplaçables).
 * **Contrôles Hybrides** : Support complet de la souris et du clavier (touches **Z, Q, S, D**).
 * **Mode Console** : Une version textuelle est également disponible pour le debug.
 
-## 📁 Structure du Projet
+##  Structure du Projet
 * `src/` : Code source Java organisé par packages.
 * `bin/` : Fichiers compilés (.class).
 * `livraison/dist/` : Contient l'exécutable `Taquin.jar`.
 * `livraison/doc/` : Documentation technique (Javadoc) et Rapport final.
 * `livraison/doc/rapport/` : Rapport de projet détaillant l'architecture MVC et UML.
 
-## 🚀 Comment lancer le projet ?
+## Comment lancer le projet ?
 
 ### 1. Utiliser l'exécutable (Recommandé)
 Le projet est livré avec un fichier JAR prêt à l'emploi. Depuis la racine du projet :
